@@ -1,0 +1,373 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Lobster&display=swap');
+*{
+    font-family: 'Lato';
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* SECCION INICIO */
+.inicio{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("img/fondo.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+.inicio .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+.inicio .contenido-seccion header{
+    padding: 30px;
+}
+
+/* Menu lateral */
+.inicio .contenido-seccion header nav{
+    position: fixed;
+    margin-left: 60px;
+    background-color: #004466;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99;
+    display: none;
+}
+.inicio .contenido-seccion header nav a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.inicio .contenido-seccion header .nav-bar{
+    position: fixed;
+    background-color: #004466;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+.inicio .contenido-seccion header .nav-bar:hover{
+    box-shadow: 0 0 35px #fff;
+}
+
+.inicio .contenido-seccion .info{
+    padding-bottom: 130px;
+}
+.inicio .contenido-seccion .info h1{
+    font-size: 3rem;
+    letter-spacing: 10px;
+}
+.inicio .contenido-seccion .info h2{
+    font-weight: normal;
+    font-size: 25px;
+    margin-top: -5px;
+    letter-spacing: 2px;
+}
+.inicio .contenido-seccion .info .redes{
+    margin: 20px 0;
+}
+.inicio .contenido-seccion .info .redes a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000;
+    color: #004466;
+    border: 1px solid #004466;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    transition: .3s;
+}
+
+.inicio .contenido-seccion .info .redes a:hover{
+    color: #fff;
+    background-color: #024994;
+    box-shadow: 0 0 20px #fff;
+}
+.inicio .contenido-seccion .foto{
+    position: relative;
+}
+.inicio .contenido-seccion .foto img{
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid #004466;
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    transform: translateX(-50%);
+}
+
+.titulo-seccion{
+    font-family: "Lobster";
+    font-size: 1.7rem;
+}
+
+/* SECCION SOBRE MI */
+.sobremi{
+    background-color: #e6e6e6;
+    padding: 120px 0 100px 0;
+    text-align: center;
+}
+.sobremi .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.sobremi .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 27px;
+}
+.sobremi .contenido-seccion .especial{
+    color: #004466;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.sobremi .contenido-seccion p{
+    max-width: 700px;
+    margin: auto;
+    color: #5a5959;
+}
+.sobremi .contenido-seccion .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.sobremi .contenido-seccion .fila .col{
+    width: 30%;
+}
+.sobremi .contenido-seccion .fila .col i{
+    color: #004466;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #004466;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.sobremi .contenido-seccion .fila .col span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+/* SECCION COMPETENCIAS */
+.competencias{
+    padding: 50px 0 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("img/competencias.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff;
+}
+.competencias .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.competencias .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 27px;
+}
+.competencias .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.competencias .contenido-seccion .fila .col{
+    width: 30%;
+    text-align: left;
+}
+.competencias .contenido-seccion .fila .col .fas{
+    width: 8%;
+    text-align: left;
+    color: #004466;
+
+}
+
+/* SECCION FORMACIÓN PROFESIONAL */
+.formacionprofesional{
+    background-color: #e6e6e6;
+    padding: 120px 0 100px 0;
+    text-align: center;
+}
+.formacionprofesional .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0px 10px;
+}
+.formacionprofesional .contenido-seccion .info{
+    text-align: center;
+    margin-top: 50px;
+}
+.formacionprofesional .contenido-seccion .info .titulo{
+    color: #004466;
+    font-weight: bold;
+    border: 3px solid #004466;
+    padding: 15px;
+}
+.formacionprofesional .contenido-seccion .info p{
+    max-width: 1000px;
+    margin: auto;
+    color: #353434;
+}
+.formacionprofesional .contenido-seccion .info .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.formacionprofesional .contenido-seccion .info .fila .col{
+    width: 30%;
+}
+.formacionprofesional .contenido-seccion .info .fila .col i{
+    color: #004466;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #004466;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.formacionprofesional .contenido-seccion .info .fila .col span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+
+/* SECCION EXPERIENCIA LABORAL */
+.experiencialaboral{
+    background-color: #171717;
+    padding: 120px 100px;
+    text-align: center;
+    color: #fff;
+    
+}
+.experiencialaboral{
+    padding: 50px 0 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("img/experiencia\ laboral.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff;
+}
+.experiencialaboral .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0px 10px;
+}
+.experiencialaboral .contenido-seccion .info{
+    text-align: left;
+    margin-top: 30px;
+}
+.experiencialaboral .contenido-seccion .info .col{
+    width: 1000%;
+}
+.experiencialaboral .contenido-seccion .info .col .titulo{
+    padding: 10px;
+}
+.experiencialaboral .contenido-seccion .info .col table{
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.experiencialaboral .contenido-seccion .info .col table .datos{
+    width: 50%;
+    border-bottom: 3px solid #004466;
+}
+.experiencialaboral .contenido-seccion .info .col table h4{
+    margin-top: 20px;
+    font-size: 17px
+}
+.experiencialaboral .contenido-seccion .info .col table h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.experiencialaboral .contenido-seccion .info .col table p{
+    font-size: 15px;
+}
+.experiencialaboral .contenido-seccion .info .col table .descripcion{
+    border-left: 3px solid #004466;
+    padding-left: 20px;
+}
+
+/* SECCION REFERENCIAS */
+.referencias{
+    background-color: #e6e6e6;
+    padding: 120px 0 100px 0;
+    text-align: center;
+}
+.referencias .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0px 10px;
+}
+.referencias .contenido-seccion p{
+    max-width: 700px;
+    margin: auto;
+    color: #5a5959;
+}
+.referencias .contenido-seccion .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.referencias .contenido-seccion .fila .col{
+    width: 30%;
+}
+.referencias .contenido-seccion .fila .col i{
+    color: #004466;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #004466;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.referencias .contenido-seccion .fila .col span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+/* SECCION CONTACTO */
+.contacto{
+    background-color: #171717;
+    padding: 100px 0 100px 0;
+    color: #e6e6e6;
+    text-align: center;
+}
+.contacto .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.contacto .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.contacto .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.contacto .contenido-seccion .fila .col{
+    margin-top: 20px;
+}
+.contacto .contenido-seccion .fila .col h2{
+    color: #004466;
+    font-size: 15px;
+}
